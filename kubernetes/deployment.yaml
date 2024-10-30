@@ -12,7 +12,7 @@ spec:
         app: workflow1
     spec:
       containers:
-        - image: registry1730322176726.azurecr.io/image-workflow-1730322024935:latest
+        - image: registry1730324216310.azurecr.io/image-workflow-1730324168691:latest
           name: workflow1
           resources:
             requests:

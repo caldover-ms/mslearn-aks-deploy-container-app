@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: workflow1
+  name: workflow1b
 spec:
   selector:
     matchLabels:
-      app: workflow1
+      app: workflow1b
   template:
     metadata:
       labels:
-        app: workflow1
+        app: workflow1b
     spec:
       containers:
-        - image: registry1730324216310.azurecr.io/image-workflow-1730324168691:latest
-          name: workflow1
+        - image: registry1730331100577.azurecr.io/image-workflow-1730330934752:latest
+          name: workflow1b
           resources:
             requests:
               cpu: 100m

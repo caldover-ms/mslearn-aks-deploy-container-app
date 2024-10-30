@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: contoso-website
+  name: workflow1
 spec:
   selector:
     matchLabels:
-      app: contoso-website
+      app: workflow1
   template:
     metadata:
       labels:
-        app: contoso-website
+        app: workflow1
     spec:
       containers:
-        - image: skdemoacr.azurecr.io/samples/contoso-website
-          name: contoso-website
+        - image: registry1730320582381.azurecr.io/image-workflow-1730320443784:latest
+          name: workflow1
           resources:
             requests:
               cpu: 100m
